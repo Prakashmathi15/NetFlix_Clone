@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #000;
   color: #fff;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -61,7 +60,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.8) 10%, transparent);
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 1%, transparent);
 }
 
 .hero-content {
@@ -117,8 +116,42 @@ body {
 }
 
 
+.popular {
+  padding: 40px 60px;
+  background-color: #111;
+}
 
+.popular h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
 
+.card-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card {
+  min-width: 200px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+}
 
 
 @media screen and (max-width: 768px) {
